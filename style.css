@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(33, 33, 33);
+  background: linear-gradient(
+    61deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(55, 55, 55, 1) 100%
+  );
+  color: white;
+  font-family: 'Borel', cursive;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background: rgb(31,29,29);
+  background: linear-gradient(0deg, rgba(31,29,29,1) 0%, rgba(32,32,36,1) 100%);
+}
+
+.left{
+  font-family: 'Borel', cursive;
+  font-size: 32px;
+  margin-top: 22px;
+  margin-left: 56px;
+}
+.right{
+  margin-right: 120px;
+}
+nav ul{
+  display:flex;
+  justify-content: center;
+
+}
+nav ul li{
+  list-style: none;
+  text-decoration: none;
+  margin: 0 20px;
+}
+.first{
+  display: flex;
+  justify-content: space-around;
+  margin-top:40px;
+}
+.first div{
+  width:35%;
+}
