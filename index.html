@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Borel&family=Ubuntu:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Ubuntu:ital,wght@1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   <body>
-    <header class=""header>
+    <header class="" header>
       <nav>
-        <div class="left">
-          Aniket's Portfolio
-        </div>
+        <div class="left" >Aniket's Portfolio</div>
         <div class="right">
           <ul class="list">
             <li class="items"><a href="/">Home</a></li>
@@ -27,30 +32,53 @@
             <li class="items"><a href="/">Contact</a></li>
           </ul>
         </div>
-       
       </nav>
-    </header> 
+    </header>
     <main>
       <section class="first">
         <div class="leftsection">
-            Hey,I'm 
-            <div>Aniket</div>
-            <div>and I am a</div>
-            <span>Web Developer</span>
+          Hey,I'm
+          <div class="nametext">Aniket</div>
+          <div>and I am a</div>
+          <span id="element"></span>
         </div>
-        <div class="rightsection">
-            
+        <div class="rightsection box">
+          <img
+            class="'pngimg"
+            src="./qBOEzQa-1280-removebg.png"
+            alt="ProgrammerCat"
+          />
         </div>
       </section>
+      <section class="social">
+        <div class="icons">
+          <a href="#" class="icon icon--instagram">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="#" class="icon icon--twitter">
+            <i class="ri-twitter-line"></i>
+          </a>
+          <a href="#" class="icon icon--linkedin">
+            <i class="ri-linkedin-line"></i>
+          </a>
+          <a href="#" class="icon icon--github">
+            <i class="ri-github-line"></i>
+          </a>
+        </div>
+      </section>
+
+      <hr>
+      <section class="second">
+
+      </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['<i>Programmer</i> ', 'Gamer','<i>Web</i> Developer'],
+        typeSpeed: 50,
+      });
+    </script>
 
-    <!-- <section id="home"> -->
-     
-    <!-- </section> -->
-
-    
-    <!-- <footer>
-      <p>&copy; 2023 John Doe. All rights reserved.</p>
-    </footer>
   </body>
 </html>

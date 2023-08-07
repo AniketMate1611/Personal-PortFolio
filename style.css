@@ -1,52 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background: rgb(33, 33, 33);
-  background: linear-gradient(
-    61deg,
-    rgba(33, 33, 33, 1) 0%,
-    rgba(55, 55, 55, 1) 100%
-  );
+  background-color: #393939;
   color: white;
-  font-family: 'Borel', cursive;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Borel", cursive;
+  font-family: "Ubuntu", sans-serif;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  background: rgb(31,29,29);
-  background: linear-gradient(0deg, rgba(31,29,29,1) 0%, rgba(32,32,36,1) 100%);
+  background: #242424;
 }
 
-.left{
-  font-family: 'Borel', cursive;
+.left {
+  font-family: "Borel", cursive;
   font-size: 32px;
   margin-top: 22px;
   margin-left: 56px;
+  -webkit-text-stroke: 0.3px #fff;
+  color: transparent;
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -280px 0;
+  animation: backcolor 7s linear infinite alternate;
 }
-.right{
+
+@keyframes backcolor {
+  100% {
+    background-position: 0 0;
+  }
+}
+.right {
   margin-right: 120px;
 }
-nav ul{
-  display:flex;
+nav ul {
+  display: flex;
   justify-content: center;
-
 }
-nav ul li{
+nav ul li {
   list-style: none;
   text-decoration: none;
   margin: 0 20px;
+  display: inline;
 }
-.first{
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+}
+nav ul li a:hover {
+  color: rgb(46, 195, 253);
+  transform: scale(1.2);
+}
+.first {
   display: flex;
   justify-content: space-around;
-  margin-top:40px;
+  margin: 180px 0px -60px 0px;
+  align-items: center;
 }
-.first div{
-  width:35%;
+.first div {
+  width: 35%;
+}
+.rightsection img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 2;
+  padding: 20px;
+}
+.leftsection {
+  font-size: 3.1rem;
+}
+
+.nametext {
+  color: #9f9faa;
+  text-shadow: 0 0 50px #e742d1, 0 0 10px #e742d1, 0 0 15px #e742d1,
+    0 0 20px #e742d1;
+}
+
+.leftsection span {
+  color: #9f9faa;
+  text-shadow: 0 0 50px #00b3ff, 0 0 10px #00b3ff, 0 0 15px #00b3ff,
+    0 0 20px #00b3ff;
+}
+
+main hr {
+  border: 0;
+  background: #926fbb;
+  height: 2px;
+  margin: 120px 80px;
+}
+
+.box{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #393939;
+  border-radius: 450px;
+  overflow: hidden;
+}
+.box::before{
+  content: '';
+  position: absolute;
+  width: 914px;
+  height :798px;
+  background: linear-gradient(#00ccff,#d500f9);
+  animation: rotate 4s linear infinite;
+}
+.box::after{
+  content: '';
+  position: absolute;
+  background: #393939;
+  inset: 5px;
+  border-radius: 450px;
+}
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+
+  }
+}
+
+.icons {
+	display: flex;
+    column-gap: 22px;
+    align-items: center;
+    margin: 0px 153px;
+
+}
+
+.icon {
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+
+.icon:hover {
+	outline-offset: 4px;
+}
+.icon i {
+	margin: auto;
+}
+.icon:hover i {
+	animation: shake 0.25s;
+}
+.icon--instagram:hover {
+	background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+}
+.icon--twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;
+}
+.icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.icon--github:hover {
+	background-color: #2ea44f;
+	outline-color: #2ea44f;
+}
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
 }
