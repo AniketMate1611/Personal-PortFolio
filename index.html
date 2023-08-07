@@ -17,29 +17,36 @@
       href="https://fonts.googleapis.com/css2?family=Borel&family=Ubuntu:ital,wght@1,300;1,500&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
+
   <body>
     <header class="" header>
+      <!-- NavBar Name -->
       <nav>
-        <div class="left" >Aniket's Portfolio</div>
+        <div class="left" id="top">Aniket's Portfolio</div>
+        <!-- NavBar Navigations -->
         <div class="right">
           <ul class="list">
-            <li class="items"><a href="/">Home</a></li>
-            <li class="items"><a href="/">About</a></li>
-            <li class="items"><a href="/">Projects</a></li>
-            <li class="items"><a href="/">Resume</a></li>
-            <li class="items"><a href="/">Contact</a></li>
+            <li class="items"><a href="#top">Home</a></li>
+            <li class="items"><a href="#about">About</a></li>
+            <li class="items"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
+      <!-- Introduction -->
       <section class="first">
         <div class="leftsection">
           Hey,I'm
           <div class="nametext">Aniket</div>
-          <div>and I am a</div>
+          <div class="imma">and I am a</div>
           <span id="element"></span>
         </div>
         <div class="rightsection box">
@@ -50,35 +57,168 @@
           />
         </div>
       </section>
-      <section class="social">
+      <!-- socials -->
+      <section class="social second">
         <div class="icons">
-          <a href="#" class="icon icon--instagram">
+          <a
+            href="https://www.instagram.com/mugiwaaraaxx/"
+            class="icon icon--instagram"
+            target="_blank"
+          >
             <i class="ri-instagram-line"></i>
           </a>
-          <a href="#" class="icon icon--twitter">
+          <a
+            href=" https://twitter.com/AniketMate1611?t=_89lqT9LwXznPR3PpjmQZw&s=08"
+            class="icon icon--twitter"
+            target="_blank"
+          >
             <i class="ri-twitter-line"></i>
           </a>
-          <a href="#" class="icon icon--linkedin">
+          <a
+            href="https://www.linkedin.com/in/aniket-mate-30ba09282"
+            class="icon icon--linkedin"
+            target="_blank"
+          >
             <i class="ri-linkedin-line"></i>
           </a>
-          <a href="#" class="icon icon--github">
+          <a
+            href="https://github.com/AniketMate1611"
+            class="icon icon--github"
+            target="_blank"
+          >
             <i class="ri-github-line"></i>
           </a>
         </div>
       </section>
 
-      <hr>
-      <section class="second">
+      <hr />
+      <section class="third">
+        <div id="about">
+          <div class="container12">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="MyPhoto.jpg" alt="" />
+              </div>
+              <div class="about-col-2">
+                <h1>About Me</h1>
+                <p class="'para">
+                  Hello, I'm Aniket S Mate, a passionate and motivated web
+                  developer . I'm eager to learn and contribute to exciting
+                  projects, and I'm excited to bring my creativity and
+                  dedication to the world of web development.
+                </p>
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">
+                    Skills
+                  </p>
+                  <p class="tab-links" onclick="opentab('education')">
+                    Education
+                  </p>
+                  <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li>Programming<br /><span>C / C++</span></li>
+                    <li>
+                      Web Development<br /><span>HTML</span><br /><span
+                        >CSS</span
+                      ><br /><span>JavaScript</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li>2018<br /><span>New Era English School</span></li>
+                    <li>
+                      2019 - 2021<br /><span
+                        >Shri Mathuradas Mohota College of Science</span
+                      ><br />
+                    </li>
+                    <li>
+                      2021 - current<br /><span
+                        >Bachelors of Computer Applicatiion (B.C.A.) </span
+                      ><br /><span
+                        >Shri Mathuradas Mohota College of Science</span
+                      ><br /><span
+                        >Rashrasant Tukdoji Maharaj Nagpur University</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                  <ul>
+                    <li>
+                      Learning<br /><span
+                        >exploring the latest web design trends</span
+                      ><br /><span>reading tech blogs</span><br /><span
+                        >learning new coding techniques</span
+                      >
+                    </li>
+                    <li>
+                      Interests<br /><span>Gaming</span><br /><span
+                        >Binging Anime</span
+                      ><br /><span>Cricket</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- ----------Contact--------- -->
+      <section class="third">
+        <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 id="contact">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-at"></i>aniketmate1611@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i></i>+91 7972871458</p>
+                <button type="button" class="buttoncv" ><a href="./MyResume.pdf" download>Download CV</a></button>
+              </div>
+              <div class="contact-right">
+                <form >
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your E-mail" required>
+                  <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                </form>
+                <button type="button" class="buttoncv" >Submit</button>
+                
+              </div>
+            </div>
 
+          </div>
+          <div class="copyright">
+            <p>Copyright &copy; Aniket. </p>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="./script.js"></script>
+
+    <!-- typed animation -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed('#element', {
-        strings: ['<i>Programmer</i> ', 'Gamer','<i>Web</i> Developer'],
+      var typed = new Typed("#element", {
+        strings: ["<i>Programmer</i> ", "Gamer", "<i>Web</i> Developer"],
         typeSpeed: 50,
       });
-    </script>
 
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
