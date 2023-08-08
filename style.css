@@ -41,9 +41,10 @@ nav {
 .right {
   margin-right: 120px;
 }
-nav ul {
+.nav-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 nav ul li {
   list-style: none;
@@ -60,6 +61,19 @@ nav ul li a {
 nav ul li a:hover {
   color: rgb(46, 195, 253);
   transform: scale(1.2);
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 /* NavBar End */
 
@@ -224,18 +238,21 @@ main hr {
 }
 .about-col-1 {
   flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-col-1 img {
   width: 100%;
-  border-radius: 210px;
+  border-radius: 315px;
 }
 .about-col-2 {
   flex-basis: 60%;
 }
 .about-col-2 > h1 {
-  font-size: 45px;
-  font-family: 'Poppins', sans-serif ;
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
 }
 p.\'para {
   font-size: 22px;
@@ -301,7 +318,7 @@ p.\'para {
 .contact-left h1 {
   margin: 20px;
   font-size: 35px;
-  font-family: 'Poppins', sans-serif ;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-left p i {
@@ -310,11 +327,11 @@ p.\'para {
   color: #ff004f;
   margin: 4px 10px;
 }
-.contact-left a{
+.contact-left a {
   text-decoration: none;
   color: white;
 }
-.contact-left button{
+.contact-left button {
   margin-left: 30px;
 }
 
@@ -328,17 +345,17 @@ p.\'para {
   border: #ff004f solid;
   border-radius: 5px;
   transition: 0.3s;
-  
 }
 
 .buttoncv:hover {
- background: #ff004f;
+  background: #ff004f;
 }
 
-.contact-right form{
+.contact-right form {
   width: 100%;
 }
-form input,form textarea{
+form input,
+form textarea {
   width: 60%;
   border: 0;
   outline: none;
@@ -349,15 +366,243 @@ form input,form textarea{
   font-size: 15px;
   border-radius: 6px;
 }
-.contact-right button{
-  width:100px;
+.contact-right button {
+  width: 100px;
   margin-left: 25%;
 }
 
-.copyright{
+.copyright {
   width: 100%;
   text-align: center;
   padding: 25px 0px;
   background: #262626;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
+}
+/* ----------------------image overlapse---------- */
+
+@media only screen and (max-width: 1630px) {
+  .first {
+    flex-direction: column;
+    margin: 102px 0px;
+  }
+  .leftsection {
+    margin-bottom: 103px;
+    text-align: center;
+  }
+  .first div {
+    width: unset;
+  }
+  .icons {
+    justify-content: center;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-col-1{
+    width: 50%;
+  }
+  .about-col-1 img{
+    border-radius: 50%;
+    width: 430px;
+    height: auto;
+  }
+  .contact-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-right button{
+    margin: unset;
+  }
+  .rightsection {
+    width: 60%;
+  }
+}
+
+/* ---------------------media query for tablets ------------------ */
+
+@media only screen and (max-width: 768px) {
+  nav {
+    height: 22vh;
+    width: 100vw;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0px;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .first {
+    height: 60vh;
+    margin: 7vh 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .leftsection {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .nametext {
+    text-align: center;
+    width: auto !important;
+  }
+  .first > div {
+    width: 80%;
+    height: auto;
+    margin: 20px 0px;
+  }
+  .icons {
+    column-gap: 26px;
+    justify-content: center;
+  }
+  main hr {
+    height: 4px;
+    margin: 9vh 9vw;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: auto;
+    align-content: space-around;
+    justify-content: space-evenly;
+  }
+
+  .about-col-1 img {
+    width: 75%;
+  }
+  .about-col-2 > h1 {
+    text-align: center;
+    margin: 7%;
+  }
+  p.\'para {
+    font-size: 25px;
+    width: 100%;
+    margin: 43px 0px 43px 31px;
+  }
+  .tab-links {
+    margin-right: 22px;
+    font-size: 25px;
+  }
+  .tab-titles {
+    justify-content: space-evenly;
+  }
+  .tab-contents.active-tab {
+    font-size: 20px;
+    margin-left: 93px;
+  }
+  .tab-contents.active-tab span {
+    font-size: 15px;
+  }
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .contact-right form {
+    display: grid;
+    justify-items: center;
+  }
+  .contact-right button {
+    margin: 0;
+  }
+
+  .copyright {
+    width: 100vw;
+  }
+}
+
+/* ---------------------media query for Mobiles ------------------ */
+@media only screen and (max-width: 600px) {
+  nav {
+    height: 22vh;
+    width: 100vw;
+  }
+  .right {
+    margin: 40px;
+  }
+
+  .first {
+    height: 90vh;
+    margin: 7vh 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .leftsection {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .icons {
+    column-gap: 16px;
+    justify-content: center;
+    width: fit-content;
+    margin: 10%;
+  }
+  #about {
+    padding: 0;
+  }
+
+  .about-col-2 > h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 7%;
+  }
+  p.\'para {
+    font-size: 19px;
+    width: 90%;
+    margin: 20px 0px 20px 25px;
+  }
+  .tab-links {
+    margin-right: 22px;
+    font-size: 20px;
+  }
+  .tab-titles {
+    justify-content: normal;
+  }
+  .tab-contents.active-tab {
+    font-size: 18px;
+    margin-left: 64px;
+  }
 }

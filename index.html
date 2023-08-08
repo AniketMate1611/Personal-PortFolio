@@ -32,11 +32,16 @@
         <div class="left" id="top">Aniket's Portfolio</div>
         <!-- NavBar Navigations -->
         <div class="right">
-          <ul class="list">
-            <li class="items"><a href="#top">Home</a></li>
-            <li class="items"><a href="#about">About</a></li>
-            <li class="items"><a href="#contact">Contact</a></li>
-          </ul>
+          <ul class="nav-menu">
+            <li class="nav-items"><a href="#top">Home</a></li>
+            <li class="nav-items"><a href="#about">About</a></li>
+            <li class="nav-items"><a href="#contact">Contact</a></li>
+          </ul> 
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </nav>
     </header>
@@ -92,49 +97,47 @@
       </section>
 
       <hr />
-      <section class="third">
-        <div id="about">
-          <div class="container12">
-            <div class="row">
-              <div class="about-col-1">
-                <img src="MyPhoto.jpg" alt="" />
-              </div>
-              <div class="about-col-2">
-                <h1>About Me</h1>
-                <p class="'para">
-                  Hello, I'm Aniket S Mate, a passionate and motivated web
-                  developer . I'm eager to learn and contribute to exciting
-                  projects, and I'm excited to bring my creativity and
-                  dedication to the world of web development.
-                </p>
-                <div class="tab-titles">
-                  <p class="tab-links active-link" onclick="opentab('skills')">
+<section class="third">
+  <div id="about">
+    <div class="container12">
+      <div class="row">
+        <div class="about-col-1">
+            <img src="MyPhoto.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+            <h1>About Me</h1>
+            <p class="'para">
+              Hello, I'm Aniket S Mate, a passionate and motivated web
+              developer . I'm eager to learn and contribute to exciting
+              projects, and I'm excited to bring my creativity and
+              dedication to the world of web development.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
                     Skills
-                  </p>
-                  <p class="tab-links" onclick="opentab('education')">
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
                     Education
-                  </p>
-                  <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                  <ul>
-                    <li>Programming<br /><span>C / C++</span></li>
-                    <li>
-                      Web Development<br /><span>HTML</span><br /><span
-                        >CSS</span
-                      ><br /><span>JavaScript</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                  <ul>
-                    <li>2018<br /><span>New Era English School</span></li>
-                    <li>
-                      2019 - 2021<br /><span
-                        >Shri Mathuradas Mohota College of Science</span
-                      ><br />
-                    </li>
-                    <li>
+              </p>
+              <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>Programming<br /><span>C / C++</span></li>
+                <li>
+                  Web Development<br /><span>HTML</span><br /><span>CSS</span><br /><span>JavaScript</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>2018<br /><span>New Era English School</span></li>
+                <li>
+                  2019 - 2021<br /><span
+                  >Shri Mathuradas Mohota College of Science</span
+                    ><br />
+                </li>
+                <li>
                       2021 - current<br /><span
                         >Bachelors of Computer Applicatiion (B.C.A.) </span
                       ><br /><span
@@ -142,30 +145,30 @@
                       ><br /><span
                         >Rashrasant Tukdoji Maharaj Nagpur University</span
                       >
-                    </li>
-                  </ul>
-                </div>
-                <div class="tab-contents" id="hobbies">
-                  <ul>
-                    <li>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="hobbies">
+              <ul>
+                <li>
                       Learning<br /><span
                         >exploring the latest web design trends</span
                       ><br /><span>reading tech blogs</span><br /><span
                         >learning new coding techniques</span
                       >
-                    </li>
-                    <li>
+                </li>
+                <li>
                       Interests<br /><span>Gaming</span><br /><span
                         >Binging Anime</span
                       ><br /><span>Cricket</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
       <hr />
       <!-- ----------Contact--------- -->
       <section class="third">
@@ -196,7 +199,7 @@
         </div>
       </section>
     </main>
-    <script src="./script.js"></script>
+    <script src="script.js" ></script>
 
     <!-- typed animation -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -220,5 +223,6 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
     </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
