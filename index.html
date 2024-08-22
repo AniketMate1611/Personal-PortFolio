@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +37,7 @@
           <ul class="nav-menu">
             <li class="nav-items"><a href="#top">Home</a></li>
             <li class="nav-items"><a href="#about">About</a></li>
+            <li class="nav-items"><a href="#about">Projects</a></li>
             <li class="nav-items"><a href="#contact">Contact</a></li>
           </ul> 
           <div class="hamburger">
@@ -107,10 +110,10 @@
         <div class="about-col-2">
             <h1>About Me</h1>
             <p class="'para">
-              Hello, I'm Aniket S Mate, a passionate and motivated web
+              Hello, I'm Aniket S Mate, a passionate and motivated 
               developer . I'm eager to learn and contribute to exciting
               projects, and I'm excited to bring my creativity and
-              dedication to the world of web development.
+              dedication to the world of Information Technology.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
@@ -123,9 +126,12 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li>Programming<br /><span>C / C++</span></li>
+                <li>Programming<br /><span>C / C++</span><br /><span>Java ( with SpringBoot )</span></li>
                 <li>
                   Web Development<br /><span>HTML</span><br /><span>CSS</span><br /><span>JavaScript</span>
+                </li>
+                <li>
+                  Database<br /><span>MySql</span>
                 </li>
               </ul>
             </div>
@@ -138,7 +144,7 @@
                     ><br />
                 </li>
                 <li>
-                      2021 - current<br /><span
+                      2021 - 2024<br /><span
                         >Bachelors of Computer Applicatiion (B.C.A.) </span
                       ><br /><span
                         >Shri Mathuradas Mohota College of Science</span
@@ -152,7 +158,7 @@
               <ul>
                 <li>
                       Learning<br /><span
-                        >exploring the latest web design trends</span
+                        >exploring the latest tech trends</span
                       ><br /><span>reading tech blogs</span><br /><span
                         >learning new coding techniques</span
                       >
@@ -161,6 +167,7 @@
                       Interests<br /><span>Gaming</span><br /><span
                         >Binging Anime</span
                       ><br /><span>Cricket</span>
+                      <br /><span>Travelling</span>
                 </li>
               </ul>
             </div>
@@ -170,6 +177,105 @@
   </div>
 </section>
       <hr />
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class="fourth">
+        <div class="heading" id="Projects">
+          <h1>Projects</h1>
+          <p class="'para" style="text-align: center;">
+            Here are some Projects that I have Created<br> with HTML,CSS,JavaScript and Java ( with SpringBoot and MySql )
+          </p>
+        </div>
+        <div id="projects" class="projectclass">
+          <div class="card card-color" style="width: 18rem;">
+            <img src="./projectfiles/bgrm.JPG" class="card-img-top" alt="Background Remover">
+            <div class="card-body">
+              <h5 class="card-title card-text-color">Image Background Remover</h5>
+              <p class="card-text card-text-color">Lets you remove Background of any Image.</p>
+              <a href="https://github.com/AniketMate1611/Image-Background-Remover" class="btn btn-primary btn-color">Github Source Code</a>
+            </div>
+          </div>
+          <div class="card card-color" style="width: 18rem;">
+            <img src="./projectfiles/fcdc.JPG" class="card-img-top" alt="FaceDetector">
+            <div class="card-body">
+              <h5 class="card-title card-text-color">Face Detector</h5>
+              <p class="card-text card-text-color">Face Detector.</p>
+              <a href="https://github.com/AniketMate1611/Face-Detector" class="btn btn-primary btn-color">Github Source Code</a>
+            </div>
+          </div>
+          <div class="card card-color" style="width: 18rem;">
+            <img src="./projectfiles/temp.JPG" class="card-img-top" alt="Temprature Converter">
+            <div class="card-body">
+              <h5 class="card-title card-text-color">Temprature Converter</h5>
+              <p class="card-text card-text-color">Used to Calculate and Covert Temprature.</p>
+              <a href="https://github.com/AniketMate1611/TempratureCalculator" class="btn btn-primary btn-color">Github Source Code</a>
+            </div>
+          </div>
+          <div class="card card-color" style="width: 18rem;">
+            <img src="./projectfiles/memegen.png" class="card-img-top" alt="Meme Generator">
+            <div class="card-body">
+              <h5 class="card-title card-text-color">Meme Generator</h5>
+              <p class="card-text card-text-color">lets You Generate Funny memes to share with your Friends.</p>
+              <a href="#" class="btn btn-primary btn-color">Github Source Code</a>
+            </div>
+          </div>
+          <div class="card card-color" style="width: 18rem;">
+            <img src="./projectfiles/productManager.PNG" class="card-img-top" alt="Product Manager">
+            <div class="card-body">
+              <h5 class="card-title card-text-color">Product Manager</h5>
+              <p class="card-text card-text-color">Created Rest Api using SpringBoot that lets you manage products in store.</p>
+              <a href="https://github.com/AniketMate1611/ProductManagement" class="btn btn-primary btn-color">Github Source Code</a>
+            </div>
+          </div>
+        </div>
+      </section>
+            <hr />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <!-- ----------Contact--------- -->
       <section class="third">
         <div id="contact">
@@ -205,7 +311,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
-        strings: ["<i>Programmer</i> ", "Gamer", "<i>Web</i> Developer"],
+        strings: ["<i>Programmer</i> ", "Gamer", "<i>Developer</i> "],
         typeSpeed: 50,
       });
 
@@ -224,6 +330,8 @@
       }
     </script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   </body>
 
 </html>
